@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.portfolio</groupId>
+    <artifactId>jmeter-performance-testing</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>JMeter Performance Testing - Reqres API</name>
+    <description>
+        Automated performance and load testing suite for the Reqres REST API
+        using Apache JMeter and Maven.
+    </description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jmeter.maven.plugin.version>3.8.0</jmeter.maven.plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- JMeter Maven Plugin -->
+            <plugin>
+                <groupId>com.lazerycode.jmeter</groupId>
+                <artifactId>jmeter-maven-plugin</artifactId>
+                <version>${jmeter.maven.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>configuration</id>
+                        <goals>
+                            <goal>configure</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jmeter-tests</id>
+                        <goals>
+                            <goal>jmeter</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jmeter-check-results</id>
+                        <goals>
+                            <goal>results</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <testFilesDirectory>${project.basedir}/src/test/jmeter</testFilesDirectory>
+                    <resultsDirectory>${project.build.directory}/jmeter/results</resultsDirectory>
+                    <generateReports>true</generateReports>
+                    <ignoreResultFailures>true</ignoreResultFailures>
+                    <testResultsTimestamp>false</testResultsTimestamp>
+                    <propertiesUser>
+                        <threads>50</threads>
+                        <rampup>10</rampup>
+                        <iterations>2</iterations>
+                    </propertiesUser>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
