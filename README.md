@@ -72,7 +72,6 @@ Reports are generated in `target/jmeter/reports/`.
 | 2 | `GET` | `/api/users/2` | Get single user by ID | `200 OK` |
 | 3 | `POST` | `/api/users` | Create user (CSV-driven) | `201 Created` |
 | 4 | `PUT` | `/api/users/2` | Update existing user | `200 OK` |
-| 5 | `DELETE` | `/api/users/2` | Delete user | `204 No Content` |
 
 ### Load Profile
 
@@ -102,7 +101,6 @@ Reports are generated in `target/jmeter/reports/`.
 | GET - Single User | 100 | 230 | 170 | 480 | 0.00% | 8.8/s |
 | POST - Create User | 100 | 280 | 200 | 600 | 0.00% | 7.9/s |
 | PUT - Update User | 100 | 260 | 190 | 550 | 0.00% | 8.2/s |
-| DELETE - Remove User | 100 | 220 | 160 | 450 | 0.00% | 9.0/s |
 
 ---
 
