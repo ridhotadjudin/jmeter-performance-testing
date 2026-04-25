@@ -1,6 +1,6 @@
 # 🚀 JMeter Performance Testing — Reqres API
 
-<!-- ![Performance Tests](https://github.com/<owner>/<repo>/actions/workflows/performance-test.yml/badge.svg) -->
+![Performance Tests](https://github.com/ridhotadjudin/jmeter-performance-testing/actions/workflows/performance-test.yml/badge.svg)
 
 Automated **performance and load testing** suite for the [Reqres](https://reqres.in) REST API, built with **Apache JMeter** and **Maven**. Designed as a portfolio project demonstrating end-to-end API performance testing skills.
 
@@ -134,10 +134,17 @@ The project includes a **GitHub Actions** workflow (`.github/workflows/performan
 3. Runs `mvn clean verify` to execute all JMeter tests
 4. **Archives** the HTML report and JTL results as build artifacts
 
-To enable the badge, update the placeholder at the top of this README with your GitHub repository URL.
+---
+
+## Author
+
+**Ridho Tadjudin** — QA Engineer
+
+- 🌐 Website: [ridhotadjudin.id](https://ridhotadjudin.id)
+- 💻 GitHub: [@ridhotadjudin](https://github.com/ridhotadjudin)
 
 ---
 
-## 📝 License
-
-This project is open source and available for educational and portfolio purposes.
+<p align="center">
+  Built with ☕ and <a href="https://docs.oracle.com/">Java</a>
+</p>
