@@ -1,5 +1,7 @@
 # 🚀 JMeter Performance Testing — Reqres API
 
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 ![Performance Tests](https://github.com/ridhotadjudin/jmeter-performance-testing/actions/workflows/performance-test.yml/badge.svg)
 
 Automated **performance and load testing** suite for the [Reqres](https://reqres.in) REST API, built with **Apache JMeter** and **Maven**. Designed as a portfolio project demonstrating end-to-end API performance testing skills.
@@ -140,6 +142,12 @@ The project includes a **GitHub Actions** workflow (`.github/workflows/performan
 
 - 🌐 Website: [ridhotadjudin.id](https://ridhotadjudin.id)
 - 💻 GitHub: [@ridhotadjudin](https://github.com/ridhotadjudin)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
