@@ -44,7 +44,7 @@ Automated **performance and load testing** suite for the [Reqres](https://reqres
 
 ### 1. Get your API key (required)
 
-ReqRes now requires an API key. Get yout free key at [app.reqres.in/api-keys](https://app.reqres.in/api-keys).
+ReqRes now requires an API key. Get your free key at [app.reqres.in/api-keys](https://app.reqres.in/api-keys).
 
 ### 2. CLI — Maven (Recommended)
 
